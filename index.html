@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Project</title>
+    <scr
+</head>
+<body>
+    <h1 id="heading">Create Post</h1>
+    <form action="">
+        <label>Post Link : </label>
+        <input type="text" name="post-link" id="post-link"/>
+        <label>Post Description : </label>
+        <input type="text" name="post-description" id="post-description"/>
+        <button type="submit" onclick="createPost(e)">Create Post</button>
+    </form>
+
+    <script>
+        // function createPost(e){
+        //     e.preventDefault();
+        //     console.log("clicked");
+        // }
+        function createPost(e) {
+            e.preventDefault();
+            document.getElementById("heading")
+                .innerHTML = "Content changed!";
+            console.log("Hiii")
+        }
+    </script>
+</body>
+</html>
