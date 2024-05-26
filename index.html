@@ -1,32 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Project</title>
-    <scr
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NodeJS Test Project</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
 </head>
 <body>
-    <h1 id="heading">Create Post</h1>
-    <form action="">
-        <label>Post Link : </label>
-        <input type="text" name="post-link" id="post-link"/>
-        <label>Post Description : </label>
-        <input type="text" name="post-description" id="post-description"/>
-        <button type="submit" onclick="createPost(e)">Create Post</button>
-    </form>
-
-    <script>
-        // function createPost(e){
-        //     e.preventDefault();
-        //     console.log("clicked");
-        // }
-        function createPost(e) {
-            e.preventDefault();
-            document.getElementById("heading")
-                .innerHTML = "Content changed!";
-            console.log("Hiii")
-        }
-    </script>
+  <h1>Create Post</h1>
+  <form id="create-post" onsubmit="createPostHandler(event)" method="POST">
+    <label for="post-link">Post Link : </label>
+    <input type="text" id="post-link" name="post-link" required>
+    <label for="post-description">Post Description : </label>
+    <input type="text" id="post-description" name="post-description" required>
+    <button type="submit">Create Post</button>
+  </form>
+  <h1>Posts</h1>
+  <div id="posts"></div>
 </body>
 </html>

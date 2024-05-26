@@ -1,0 +1,30 @@
+.post-container {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+.post-image {
+    width: 100%;
+    height: auto;
+}
+
+.post-description {
+    margin-top: 10px;
+}
+
+.comments-button {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.comments-button button {
+    border: none;
+    padding: 5px 10px;
+    background-color: #ddd;
+    cursor: pointer;
+}
